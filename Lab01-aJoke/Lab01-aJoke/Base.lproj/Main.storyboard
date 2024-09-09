@@ -1,24 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab01_aJoke" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joke" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" minimumFontSize="0.20000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B0W-qf-GZ0">
+                                <rect key="frame" x="47" y="221" width="299" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Punch Line" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r2U-FW-hla">
+                                <rect key="frame" x="28" y="367" width="337" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="PWY-MH-Y6S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6W-7A-bLn">
+                                <rect key="frame" x="119" y="442" width="155" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Punch Line"/>
+                                <connections>
+                                    <action selector="showPunchLine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uho-Wk-Nxf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqr-MC-rmt">
+                                <rect key="frame" x="143" y="299" width="107" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Joke"/>
+                                <connections>
+                                    <action selector="showJoke:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FGH-vH-IPT"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="B0W-qf-GZ0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="6AD-Fw-npk"/>
+                            <constraint firstItem="B0W-qf-GZ0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="162" id="9T6-qZ-Gra"/>
+                            <constraint firstItem="r2U-FW-hla" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mep-LJ-CiF"/>
+                            <constraint firstItem="r2U-FW-hla" firstAttribute="top" secondItem="pqr-MC-rmt" secondAttribute="bottom" constant="33" id="Sdd-tT-7L6"/>
+                            <constraint firstItem="O6W-7A-bLn" firstAttribute="top" secondItem="r2U-FW-hla" secondAttribute="bottom" constant="8" id="Wfj-XE-2dF"/>
+                            <constraint firstItem="r2U-FW-hla" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="367" id="Z3x-zs-bun"/>
+                            <constraint firstItem="pqr-MC-rmt" firstAttribute="centerX" secondItem="B0W-qf-GZ0" secondAttribute="centerX" id="eh0-zh-gMq"/>
+                            <constraint firstItem="r2U-FW-hla" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="glp-kr-6yZ"/>
+                            <constraint firstItem="r2U-FW-hla" firstAttribute="centerX" secondItem="O6W-7A-bLn" secondAttribute="centerX" id="ign-9Z-MfV"/>
+                            <constraint firstItem="r2U-FW-hla" firstAttribute="centerX" secondItem="pqr-MC-rmt" secondAttribute="centerX" id="tpB-Nj-dQS"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="jokeLabel" destination="B0W-qf-GZ0" id="xtO-x2-2Rx"/>
+                        <outlet property="punchlineLabel" destination="r2U-FW-hla" id="SLT-rA-1i4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="125.95419847328243" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
