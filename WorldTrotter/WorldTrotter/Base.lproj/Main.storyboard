@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="212" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYa-b0-tS0">
+                                <rect key="frame" x="141" y="67" width="111" height="83.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etu-hJ-iob">
+                                <rect key="frame" x="167.66666666666666" y="187.66666666666666" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2s3-jU-Dbp">
+                                <rect key="frame" x="138" y="216.66666666666663" width="117" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Civ-KJ-z25">
+                                <rect key="frame" x="135.66666666666666" y="308.66666666666669" width="121.99999999999997" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msg-xy-iDe">
+                                <rect key="frame" x="123" y="158.66666666666666" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QYa-b0-tS0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2R2-1p-Vmq"/>
+                            <constraint firstItem="etu-hJ-iob" firstAttribute="centerX" secondItem="QYa-b0-tS0" secondAttribute="centerX" id="DLa-L0-DjA"/>
+                            <constraint firstItem="etu-hJ-iob" firstAttribute="top" secondItem="Msg-xy-iDe" secondAttribute="bottom" constant="8" id="Oqo-KT-Teo"/>
+                            <constraint firstItem="Msg-xy-iDe" firstAttribute="centerX" secondItem="QYa-b0-tS0" secondAttribute="centerX" id="Sbx-vw-SS5"/>
+                            <constraint firstItem="Msg-xy-iDe" firstAttribute="top" secondItem="QYa-b0-tS0" secondAttribute="bottom" constant="8" id="Tom-5a-55V"/>
+                            <constraint firstItem="Civ-KJ-z25" firstAttribute="top" secondItem="2s3-jU-Dbp" secondAttribute="bottom" constant="8" id="dwS-jS-sCk"/>
+                            <constraint firstItem="Civ-KJ-z25" firstAttribute="centerX" secondItem="QYa-b0-tS0" secondAttribute="centerX" id="fMi-2O-chJ"/>
+                            <constraint firstItem="2s3-jU-Dbp" firstAttribute="centerX" secondItem="QYa-b0-tS0" secondAttribute="centerX" id="fxX-eh-tpY"/>
+                            <constraint firstItem="2s3-jU-Dbp" firstAttribute="top" secondItem="etu-hJ-iob" secondAttribute="bottom" constant="8" id="lTS-El-2MT"/>
+                            <constraint firstItem="QYa-b0-tS0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="mlt-pk-eTg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label100" destination="2s3-jU-Dbp" id="oju-DO-AWw"/>
+                        <outlet property="label212" destination="QYa-b0-tS0" id="BUb-Qd-GFk"/>
+                        <outlet property="labelDegreesCelsius" destination="Civ-KJ-z25" id="FCY-vt-c4C"/>
+                        <outlet property="labelDegreesFahrenheit" destination="Msg-xy-iDe" id="NKi-4t-8Ae"/>
+                        <outlet property="labelIsReally" destination="etu-hJ-iob" id="HAP-hF-ckm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.64122137404578" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+</document>
