@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab7_TableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanholo" translatesAutoresizingMaskIntoConstraints="NO" id="f75-mX-2Lx">
+                                <rect key="frame" x="76" y="59" width="241" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Holo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msa-Y9-X0w">
+                                <rect key="frame" x="76" y="195" width="48" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ko0-mR-I99">
+                                <rect key="frame" x="76" y="231" width="241" height="135"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongCell" rowHeight="511" id="cg4-zC-p23">
+                                        <rect key="frame" x="0.0" y="50" width="241" height="511"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cg4-zC-p23" id="kbq-sd-7Bd">
+                                            <rect key="frame" x="0.0" y="0.0" width="241" height="511"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYB-zt-S4Z">
+                                <rect key="frame" x="253" y="195" width="64" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Play"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ko0-mR-I99" firstAttribute="top" secondItem="msa-Y9-X0w" secondAttribute="bottom" constant="22" id="2T3-GR-IeF"/>
+                            <constraint firstItem="f75-mX-2Lx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Djh-iu-uTP"/>
+                            <constraint firstItem="NYB-zt-S4Z" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="msa-Y9-X0w" secondAttribute="trailing" constant="8" symbolic="YES" id="G5V-gu-lcY"/>
+                            <constraint firstItem="msa-Y9-X0w" firstAttribute="top" secondItem="f75-mX-2Lx" secondAttribute="bottom" constant="8" id="XNv-5x-tGR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ko0-mR-I99" secondAttribute="bottom" constant="452" id="bqx-Mr-Bkv"/>
+                            <constraint firstItem="msa-Y9-X0w" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="195" id="bw8-pd-bh5"/>
+                            <constraint firstItem="f75-mX-2Lx" firstAttribute="trailing" secondItem="ko0-mR-I99" secondAttribute="trailing" id="eBJ-dR-tQZ"/>
+                            <constraint firstItem="msa-Y9-X0w" firstAttribute="leading" secondItem="ko0-mR-I99" secondAttribute="leading" id="fWy-m4-LXX"/>
+                            <constraint firstItem="msa-Y9-X0w" firstAttribute="leading" secondItem="f75-mX-2Lx" secondAttribute="leading" id="fd5-O0-bw4"/>
+                            <constraint firstItem="f75-mX-2Lx" firstAttribute="trailing" secondItem="NYB-zt-S4Z" secondAttribute="trailing" id="hIu-Zf-PGf"/>
+                            <constraint firstItem="msa-Y9-X0w" firstAttribute="top" secondItem="NYB-zt-S4Z" secondAttribute="top" id="jiC-7W-E0Q"/>
+                            <constraint firstItem="msa-Y9-X0w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="lC1-hL-EiS"/>
+                            <constraint firstItem="f75-mX-2Lx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="laA-Gq-Qd4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="albumArtImageView" destination="f75-mX-2Lx" id="gmb-ox-tM5"/>
+                        <outlet property="playPauseButton" destination="NYB-zt-S4Z" id="6t4-6V-g4b"/>
+                        <outlet property="songTitleLabel" destination="msa-Y9-X0w" id="8dg-b5-OFS"/>
+                        <outlet property="tableView" destination="ko0-mR-I99" id="OUd-5h-Gn2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sanholo" width="900" height="900"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
